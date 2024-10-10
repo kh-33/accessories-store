@@ -13,7 +13,7 @@ let addedItem = JSON.parse(localStorage.getItem("ProductsInCart")) || [];
 function drawCartProducts(products) {
   if (products.length === 0) {
     allProducts.innerHTML = `<h2>Cart is empty :( <h2>
-        <a href="index.html">View All Products</a>`;
+        <a href="index.html" class='a'>Continue Shopping</a>`;
     return;
   }
   let y = products.map((item) => {
@@ -48,7 +48,7 @@ function removeFromCart(id) {
 }
 
 function calcTotal(products) {
-  if ((price = 0)) return "0";
+  if ((price = 0)) return "";
 
   return products.reduce((total, product) => {
     let price =
