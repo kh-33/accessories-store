@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(247, 208, 232);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+ul li a {
+  min-width: 40px;
+}
+
+nav ul#user_info li .badge {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(239, 150, 205);
+  color: #000000;
+  border-radius: 50%;
+  top: -15px;
+  right: -10px;
+  font-size: 13px;
+  display: none;
+}
+
+.products {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.product_item {
+  display: flex;
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  min-height: 150px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  /* padding-left: 5px; */
+}
+.product_item_img {
+  position: relative;
+  width: 50%;
+  margin-right: 10px;
+}
+.product_item_action {
+  flex: 1;
+  text-align: rght;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product_item .fav {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: auto;
+}
+
+.products {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.product_item {
+  display: flex;
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  min-height: 200px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.product_item_img {
+  position: relative;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.product_item_action {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_item .add_to_cart {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(247, 208, 232);
+  color: rgb(251, 237, 246);
+  border: 0;
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.product_item .add_to_cart:hover {
+  background-color: rgb(241, 171, 214);
+}
+
+nav ul#user_info li i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav ul#user_info li {
+  margin: 0px 10px;
+  position: relative;
+}
+
+nav ul#user_info li .badge {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(239, 150, 205);
+  color: #000000;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  font-size: 13px;
+  display: none;
+}
+
+.carts_products h1 {
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  min-width: 150px;
+  background-color: rgb(247, 208, 232);
+  top: 56px;
+  right: 1px;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  display: none;
+}
+
+.carts_products a {
+  display: block;
+  color: #000;
+  margin: 4px 0;
+  padding: 0;
+
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  width: 150pxpx;
+  padding: 5px;
+  margin: 15px;
+}
+
+#searchButton {
+  background-color: rgb(247, 208, 232);
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#searchButton:hover {
+  background-color: rgb(241, 171, 214);
+}
+
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  background-color: rgb(247, 208, 232);
+  padding: 20px;
+  border-radius: 10px;
+}
+.section-form h2 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: black;
+  padding-bottom: 5px;
+}
+.section-form form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  outline: none;
+}
+
+.section-form form input[type="submit"] {
+  font-size: 20px;
+  text-transform: capitalize;
+  height: fit-content;
+}
+.section-form form input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+.section-form a {
+  color: rgb(207, 40, 143);
+  text-decoration: none;
+}
+
+.total {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(247, 208, 232);
+  width: 100%;
+  background-color: white;
+}
+
+@media (max-width: 576px) {
+  .section-form h2 {
+    font-size: 20;
+  }
+  .section-form {
+    width: 75%;
+  }
+  .add_to_cart {
+    width: 85px;
+  }
+
+  .product_item {
+    width: 100%;
+  }
+}
