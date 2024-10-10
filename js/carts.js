@@ -48,7 +48,7 @@ function removeFromCart(id) {
 }
 
 function calcTotal(products) {
-  if ((price = 0)) return "";
+  if ((price = 0)) return "0";
 
   return products.reduce((total, product) => {
     let price =
