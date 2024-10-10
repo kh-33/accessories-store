@@ -15,42 +15,42 @@ let products = [
     title: "Sinaala",
     color: "Rose gold",
     price: "40$",
-    imageUrl: "images/prod1.webp",
+    imageUrl: "./images/prod1.webp",
   },
   {
     id: 2,
     title: "Sininaa",
     color: "Silver",
     price: "45$",
-    imageUrl: "images/prod2.webp",
+    imageUrl: "./images/prod2.webp",
   },
   {
     id: 3,
     title: "Senatta",
     color: "Silver",
     price: "30$",
-    imageUrl: "images/prod3.webp",
+    imageUrl: "./images/prod3.webp",
   },
   {
     id: 4,
     title: "Neenia",
     color: "Rose gold",
     price: "25$",
-    imageUrl: "images/prod4.webp",
+    imageUrl: "./images/prod4.webp",
   },
   {
     id: 5,
     title: "Beksia",
     color: "Floral",
     price: "23$",
-    imageUrl: "images/prod5.webp",
+    imageUrl: "./images/prod5.webp",
   },
   {
     id: 6,
     title: "Brendy",
     color: "Pale green",
     price: "23$",
-    imageUrl: "images/prod6.webp",
+    imageUrl: "./images/prod6.webp",
   },
 ];
 
@@ -78,7 +78,7 @@ function drawItems(productsToDraw) {
     .map((item) => {
       return `
             <div class="product_item">
-                <img class="product_item_img" src="${item.imageUrl}" alt="">
+                <img class="product_item_img" src="${item.imageUrl}" alt="item">
                 <div class="product_item_desc">
                     <h2>${item.title}</h2>
                     <p>High quality accessories</p>
