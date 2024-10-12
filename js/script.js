@@ -15,48 +15,42 @@ let products = [
     title: "Sinaala",
     color: "Rose gold",
     price: "40$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod1.webp",
+    imageUrl: "../images/prod1.webp",
   },
   {
     id: 2,
     title: "Sininaa",
     color: "Silver",
     price: "45$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod2.webp",
+    imageUrl: "../images/prod2.webp",
   },
   {
     id: 3,
     title: "Senatta",
     color: "Silver",
     price: "30$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod3.webp",
+    imageUrl: "../images/prod3.webp",
   },
   {
     id: 4,
     title: "Neenia",
     color: "Rose gold",
     price: "25$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod4.webp",
+    imageUrl: "../images/prod4.webp",
   },
   {
     id: 5,
     title: "Beksia",
     color: "Floral",
     price: "23$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod5.webp",
+    imageUrl: "../images/prod5.webp",
   },
   {
     id: 6,
     title: "Brendy",
     color: "Pale green",
     price: "23$",
-    imageUrl:
-      "https://raw.githubusercontent.com/kh-33/accessories-store/refs/heads/main/Images/prod6.webp",
+    imageUrl: "../images/prod6.webp",
   },
 ];
 

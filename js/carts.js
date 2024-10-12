@@ -14,6 +14,7 @@ function drawCartProducts(products) {
   if (products.length === 0) {
     allProducts.innerHTML = `<h2>Cart is empty :( <h2>
         <a href="index.html" class='a'>Continue Shopping</a>`;
+    totalValue.innerHTML = calcTotal([]);
     return;
   }
   let y = products.map((item) => {
@@ -35,7 +36,8 @@ function drawCartProducts(products) {
   });
   allProducts.innerHTML = y.join("");
 
-  totalValue.innerHTML = calcTotal(products);
+  totalValue.innerHTML = `Total: $${calcTotal(products)}`;
+  checkoutButton();
 }
 
 function removeFromCart(id) {
@@ -48,13 +50,26 @@ function removeFromCart(id) {
 }
 
 function calcTotal(products) {
-  if ((price = 0)) return "";
+  if (products.length === 0) return 0;
 
   return products.reduce((total, product) => {
     let price =
       typeof product.price === "object" ? product.price.value : product.price;
     return total + parseFloat(price);
   }, 0);
+}
+
+function checkoutButton() {
+  const totalBox = document.querySelector(".total");
+
+  const checkout = document.querySelector(".checkout");
+  checkout.innerText = "Checkout";
+
+  checkout.onclick = () => alert("Proceeding to checkout...");
+
+  totalBox.innerHTML = "";
+  totalBox.appendChild(totalValue);
+  totalBox.appendChild(checkout);
 }
 
 drawCartProducts(addedItem);

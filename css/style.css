@@ -107,6 +107,7 @@ nav ul#user_info li .badge {
   background-color: rgb(247, 208, 232);
   color: rgb(251, 237, 246);
   border: 0;
+  border-radius: 5px;
   width: 100px;
   padding: 5px 10px;
   font-size: 12px;
@@ -239,6 +240,9 @@ input[type="text"] {
 
 .total {
   position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -250,6 +254,22 @@ input[type="text"] {
   border: 2px solid rgb(247, 208, 232);
   width: 100%;
   background-color: white;
+}
+
+.checkout {
+  position: absolute;
+
+  margin-right: 10px;
+  right: 0;
+  background-color: rgb(247, 208, 232);
+  color: rgb(251, 237, 246);
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 @media (max-width: 576px) {
