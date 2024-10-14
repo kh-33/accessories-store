@@ -15,7 +15,7 @@ let products = [
     title: "Sinaala",
     color: "Rose gold",
     price: "40$",
-    imageUrl: "../Image/first.jpg",
+    imageUrl: "../Image/prod1.webp",
   },
   {
     id: 2,
